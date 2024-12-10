@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #490085;
+    font-family: Arial, sans-serif;
+    
+}
+.box-1{
+    background-color: yellow;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    text-align: start;
+
+}
+.featured-section {
+    background-color: #2f1b56;
+    padding: 20px;
+    color: white;
+    
+}
+
+.featured-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured-scroll-container {
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd #490085;
+    
+}
+
+.featured-grid {
+    display: inline-flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.card {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.info {
+    padding: 10px;
+background-color:  #494b4d;
+        
+}
+
+.rating {
+    font-size: 1rem;
+    color: #FFD700;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.watchlist-btn,
+.trailer-btn {
+    color: white;
+    background-color: #494b4d;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    display: block;
+    margin: 10px auto;
+}
+a {
+    text-decoration: none;
+}
+
+.watchlist-btn {
+    color: rgb(82, 136, 236);
+    background-color: #626466;
+    
+}
+
+.trailer-btn:hover {
+    background-color: #3e3e3e;
+}
+.watchlist-btn:hover {
+    background-color: #505050;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIncard {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    80%{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.appear {
+    opacity: 0;
+    animation: fadeIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.appearcard{
+    opacity: 0;
+    animation: fadeIncard 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appear:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.appear:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.appearcard:nth-child(1){
+    animation-delay: 0.3s
+}
+.appearcard:nth-child(2){
+    animation-delay: 0.6s;
+}
+.appearcard:nth-child(3){
+    animation-delay: 0.9s;
+}
+.appearcard:nth-child(4){
+    animation-delay: 1.2s;
+}
+.appearcard:nth-child(5){
+    animation-delay: 1.5s;
+}
+.appearcard:nth-child(6){
+    animation-delay: 1.8s;
+}
+.appearcard:nth-child(7){
+    animation-delay: 2.1s;
+}
